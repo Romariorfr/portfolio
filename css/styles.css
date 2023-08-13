@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "DM+Sans", sans-serif;
+    background-color: #13131F;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    background-color: #000000
+  }
+  
+  .nav-container {
+    border-bottom: 1px solid #8257E6;
+    padding: 20px;
+    height: 77px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .nav-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .nav-main a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+  .nav-brand {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 160px 0 60px 0;
+  }
+  
+  .profile-avatar img {
+    width: 150px;
+  }
+  
+  .profile-title {
+    margin: 35px 0 0 0;
+    font-size: 2rem;
+  }
+  
+  .profile-description {
+    margin: 0;
+    font-size: 1 rem;
+  }
+  
+  #portifolio {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .portifolio-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 60px 0 10px 0;
+    color: #2c3e50;
+  }
+  
+  .portifolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .portifolio-item {
+    width: calc(100% - 40px);
+    max-width: 420px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .footer-title {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  
+  .social-container img {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+  }
+  
+  @media (min-width: 576px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 24px;
+    }
+  
+    .portifolio-item {
+      width: 280px;
+    }
+  
+    .nav-main {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .nav-brand {
+      margin-bottom: 0;
+      font-size: 26px;
+    }
+  
+    .nav-container {
+      display: flex;
+      font-size: 30px;
+    }
+  
+    .menu-items li{
+      font-size: 18px;
+    }
+  }
+  
