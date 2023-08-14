@@ -82,6 +82,48 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.intro h1,
+.intro span,
+.intro p {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30), fade-in 2s ease-in-out;
+  opacity: 0; /* Tornar o texto inicialmente invisível */
+  animation-fill-mode: forwards; /* Mantém o último estado da animação */
+}
+
+/* Adicione um atraso para cada elemento */
+.intro h1 {
+  animation-delay: 0s;
+}
+
+.intro span {
+  animation-delay: 3s; /* Atraso de 4 segundos */
+}
+
+.intro p {
+  animation-delay: 6s; /* Atraso de 8 segundos */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .profile-title {
