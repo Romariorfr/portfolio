@@ -184,6 +184,8 @@ footer {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding-bottom: 150px;
+  padding-top: 45px;
 }
 
 .portfolio-title {
