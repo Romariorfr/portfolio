@@ -242,6 +242,10 @@ footer {
   padding: 10%;
 }
 
+.about h2 {
+  color: #fff;
+}
+
 .about p {
   color: #828282;
   font-size: 18px;
@@ -261,6 +265,7 @@ footer {
 .skills h2 {
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 
 .skills img {
@@ -324,5 +329,29 @@ footer {
 
   .menu-items li {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15% 10% 0 10%;
+  }
+
+  .profile-title {
+    font-size: 42px;
+  }
+
+  .profile-description {
+    font-size: 18px;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .button-cv {
+    margin-right: 10px;
   }
 }
