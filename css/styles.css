@@ -240,6 +240,13 @@ footer {
   align-items: center;
   text-align: center;
   padding: 10%;
+  font-family: DM Sans;
+}
+
+.about h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 27px;
 }
 
 .about p {
@@ -261,6 +268,7 @@ footer {
 .skills h2 {
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 
 .skills img {
@@ -324,5 +332,48 @@ footer {
 
   .menu-items li {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10% 10% 0 10%;
+  }
+
+  .profile-title {
+    font-size: 35px;
+  }
+
+  .profile-description {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .actions {
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .actions button {
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .button-cv {
+    margin-right: 10px;
+  }
+
+  .about {
+    padding: 0% 15% 2% 15%;
+  }
+
+  .profile-avatar img {
+    width: 250px;
+    border-radius: 100%;
+    padding: 10px 10px 10px 10px;
+
+    margin-bottom: 100px;
   }
 }
