@@ -268,7 +268,6 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   padding: 150px 20px 20px 20px;
- 
 }
 
 .skills h2 {
@@ -286,13 +285,20 @@ footer {
 }
 
 .skills img.clicked {
-  transform: rotate(360deg);
+  transform-origin: center center;
+  transform: rotate(0deg) scale(1);
+  transition: transform 3s ease-in-out;
+  z-index: 100;
+  align-items: center;
 }
 
-.skills img:hover {
+.skills img.clicked {
+  transform: rotate(360deg) scale(4);
   transform: scale(1.2) rotateZ(calc(-5deg + 10deg * random()));
   filter: brightness(1.2);
 }
+
+
 
 .square-image {
   width: 150px;
@@ -351,7 +357,6 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10% 10% 0 10%;
- 
   }
 
   .profile-title {
