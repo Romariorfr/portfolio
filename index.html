@@ -42,7 +42,25 @@
           <p class="profile-description">Full Stack: Spring + React</p>
           <div class="actions">
             <button class="button-cv">Download CV</button>
-            <button class="button-down">Entrar em contato</button>
+            <script>
+              function openWhatsApp() {
+                const phoneNumber = "+5537999552701";
+                const message = "Olá! Estou entrando em contato pelo site.";
+
+                // Codificar o número de telefone e a mensagem para o formato de URL
+                const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+                const encodedMessage = encodeURIComponent(message);
+
+                // Criar o link completo para o WhatsApp
+                const whatsappLink = `https://wa.me/${encodedPhoneNumber}?text=${encodedMessage}`;
+
+                // Abrir o link em uma nova janela/tab
+                window.open(whatsappLink, "_blank");
+              }
+            </script>
+            <button class="button-down" onclick="openWhatsApp()">
+              Entrar em contato
+            </button>
           </div>
         </div>
       </section>
@@ -118,31 +136,15 @@
         <h2 class="portfolio-title">Projetos</h2>
 
         <div class="portfolio-container">
+          <img class="portfolio-item" src="img/dscatalog.png" alt="dscatalog" />
+          <img class="portfolio-item" src="img/scales.png" alt="Scales" />
           <img
             class="portfolio-item"
-            src="img/dscatalog.png"
-            alt="Portfolio 1"
+            src="img/github-api.png"
+            alt="perfil github"
           />
-          <img
-            class="portfolio-item"
-            src="img/dscatalog.png"
-            alt="Portfolio 1"
-          />
-          <img
-            class="portfolio-item"
-            src="img/dscatalog.png"
-            alt="Portfolio 1"
-          />
-          <img
-            class="portfolio-item"
-            src="img/dscatalog.png"
-            alt="Portfolio 1"
-          />
-          <img
-            class="portfolio-item"
-            src="img/dscatalog.png"
-            alt="Portfolio 1"
-          />
+          <img class="portfolio-item" src="img/movies.png" alt="movies" />
+          <img class="portfolio-item" src="img/movieflix.png" alt="movieflix" />
 
           <a href="https://romariorfr.github.io/fogo-doom"
             ><img class="portfolio-item" src="img/doom.png" alt="Doom" />
