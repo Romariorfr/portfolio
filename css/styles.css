@@ -220,23 +220,66 @@ footer {
   padding-top: 100px;
 }
 
-.portfolio-container {
+.portfolio-card {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  cursor: pointer;
+  padding: 20px;
+  min-width: 350px;
 }
 
 .portfolio-item {
-  width: calc(100% - 40px);
-  max-width: 420px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin: 20px;
-  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+  width: 350px;
+  height: auto;
+  border-radius: 3px;
 }
 
-.portfolio-item:hover {
-  transform: scale(1.25); /* Aumenta o tamanho em 10% */
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+.profile-description p{
+  padding: 5px;
+}
+
+.actions-description button {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 2px solid #005cbf;
+  margin: 5px;
+  height: 30px;
+  color: #828282;
+}
+
+.actions-description button:hover{
+  background-color: #13131f;
+  cursor: pointer;
+}
+.categorie-badge-container {
+  display: flex;
+}
+
+.categorie-badge {
+  background-color: rgba(64, 123, 255, 0.3);
+  padding: 7px;
+  border-radius: 10px;
+  color: #407bff;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  height: 33px;
+  margin-right: 10px;
+  margin-bottom: 13px;
 }
 
 .about {
@@ -298,8 +341,6 @@ footer {
   filter: brightness(1.2);
 }
 
-
-
 .square-image {
   width: 150px;
   height: 150px;
@@ -327,10 +368,6 @@ footer {
 @media (min-width: 768px) {
   html {
     font-size: 24px;
-  }
-
-  .portfolio-item {
-    width: 280px;
   }
 
   .nav-container {
